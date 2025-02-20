@@ -76,7 +76,7 @@ function getUsers() {
             const users = response.data.users;
             console.log("✅ Users:", users);
 
-            usersList.innerHTML = ""; // Clear list before adding users
+            usersList.innerHTML = "";
 
             users.forEach(user => {
                 // ✅ Create list item with delete button
@@ -126,11 +126,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const logoutBtn = document.getElementById("logoutBtn");
 
     if (user) {
-        logoutBtn.textContent = "🚪 Logout"; // Show Logout when user is logged in
+        logoutBtn.textContent = "🚪 Logout";
     } else {
         logoutBtn.textContent = "🔑 Login";
         logoutBtn.onclick = function() {
-            window.location.href = "login.html"; // Redirect to login page if not logged in
+            window.location.href = "login.html";
         };
     }
 });
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function checkLoginStatus() {
     const user = JSON.parse(localStorage.getItem("user"));
-    const currentPage = window.location.pathname.split("/").pop(); // Get the current file name
+    const currentPage = window.location.pathname.split("/").pop();
 
     if (!user && currentPage === "users.html") {
         alert("❌ You are not logged in! Redirecting to login page...");
@@ -150,7 +150,7 @@ function checkLoginStatus() {
 window.onload = function () {
     checkLoginStatus(); // Ensures only logged-in users stay on protected pages
     if (window.location.pathname.includes("users.html")) {
-        getUsers(); // Fetch users only on dashboard
+        getUsers();
     }
 };
 

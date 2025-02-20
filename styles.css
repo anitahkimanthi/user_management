@@ -20,6 +20,10 @@ nav {
     color: white;
     font-weight: bold;
 }
+ul{
+    text-align: left;
+
+}
 
 .nav-links a, button {
     color: white;
