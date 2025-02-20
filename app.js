@@ -88,7 +88,6 @@ function getUsers() {
                 usersList.appendChild(li);
             });
 
-            alert("✅ Users fetched successfully!");
         })
         .catch(error => {
             console.error("❌ Error fetching users:", error);
