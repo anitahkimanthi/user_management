@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌍 MyWebsite</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+                <a href="users.html">Dashboard</a>
+                <button id="logoutBtn" onclick="logout()">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>🔐 Login</h2>
+
+        <form method="POST" class="form-box">
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <input type="password" id="pass" placeholder="Enter Password" required>
+            <button type="submit" onclick="login()">Login</button>
+        </form>
+
+        <p class="register-text">
+            Don't have an account? <a href="register.html">Register Here</a>
+        </p>
+    </div>
+</body>
+
+</html>

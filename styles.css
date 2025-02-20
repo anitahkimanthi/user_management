@@ -1,0 +1,193 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007bff;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a, button {
+    color: white;
+    width: 150px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.nav-links button {
+    width: 150px;
+
+}
+
+#logoutBtn {
+    background: rgb(254, 254, 254);
+    color: #007bff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: white;
+    color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+    color: white;
+}
+
+
+#usersList {
+    list-style: none;  /* Remove default bullet points */
+    padding: 0;
+}
+
+#usersList li {
+    display: flex;            /* Arrange items in a row */
+    justify-content: space-between; /* Push button to the right */
+    align-items: center;      /* Center items vertically */
+    padding: 10px;
+    margin: 5px 0;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    flex-grow: 1;  /* Allows text to take full width */
+}
+
+.delete-btn {
+    background: #f4f4f4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 40px;
+}
+
+.delete-btn:hover {
+    background: darkred;
+    color: #ffffff
+}
+
+
+/* Form Container */
+.container {
+    width: 40%;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Fields */
+.form-box input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 85%;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Register Link */
+.register-text {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.register-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Form Inputs */
+input {
+    width: 80%; 
+    padding: 12px; 
+    margin: 10px 0;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Placeholder Text */
+input::placeholder {
+    color: #999;
+    font-style: italic;
+}
